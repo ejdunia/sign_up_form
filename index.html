@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up!</title>
+        <link rel="stylesheet" href="./dist/output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abel&family=Rubik+Moonrocks&display=swap"
+            rel="stylesheet"
+        />
+        <script src=".src/script.js" defer></script>
+    </head>
+    <body class="bg-gray-50 font-Abel">
+        <!-- main body  -->
+        <div class="m-auto lg:grid lg:grid-cols-3 md:h-screen">
+            <!-- image section with logo -->
+            <div class="col-span-1 relative">
+                <div class="h-full">
+                    <img
+                        src="./img/IMG_20220130_183917.jpg"
+                        class="h-20 w-full lg:h-full object-cover z-10"
+                        alt=""
+                    />
+                </div>
+                <div
+                    class="absolute top-4 lg:top-[40%] bg-[#1b1b1b8e] w-full border b flex justify-center items-center"
+                >
+                    <img
+                        src="./img/odin-lined.png"
+                        class="w-8 lg:w-[20%]"
+                        alt="odin Logo"
+                    />
+                    <p class="text-2xl lg:text-9xl text-gray-100 font-Rubik">
+                        ODIN
+                    </p>
+                </div>
+            </div>
+            <!-- main sign up content -->
+            <div class="lg:col-span-2 self-center">
+                <!-- top part -->
+                <div class="text-xl font-medium p-14 lg:text-3xl lg:w-5/6">
+                    <h2>
+                        This is not a real online service! You know you need
+                        something like this in your life to help you realise
+                        your wildest dreams.
+                        <h2>Sign up now to get started</h2>
+                    </h2>
+                    <br />
+                    <h2>You know you want to.</h2>
+                </div>
+                <!-- form -->
+                <div class="w-full">
+                    <form action="#">
+                        <div
+                            class="bg-white w-full shadow-md p-5 flex flex-col items-center lg:items-start lg:pl-10"
+                        >
+                            <h2
+                                class="text-xl font-medium mb-3 text-gray-800 lg:text-2xl lg:items-start"
+                            >
+                                Let's do this!
+                            </h2>
+                            <ul
+                                class="block uppercase space-y-4 text-xs gap-x-20 gap-y-7 font-medium tracking-wide lg:grid lg:grid-cols-2 lg:text-lg items-center"
+                            >
+                                <li class="listStyle">
+                                    <label for="firstName">
+                                        <span class="block"
+                                            >First Name</span
+                                        ></label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="firstName"
+                                        name="firstname"
+                                        class="input"
+                                    />
+                                </li>
+
+                                <li class="listStyle">
+                                    <label for="lastName">
+                                        <span class="block"
+                                            >Last Name</span
+                                        ></label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="lastName"
+                                        name="lastname"
+                                        class="input"
+                                    />
+                                </li>
+
+                                <li class="listStyle relative">
+                                    <label for="email">
+                                        <span class="block">email</span></label
+                                    >
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        .
+                                        class="input peer"
+                                    />
+                                    <p
+                                        class="invisible normal-case absolute top-16 lg:top-20 pt-2 mb-2 peer-invalid:visible text-pink-600 text-xs"
+                                    >
+                                        Please provide a valid email address.
+                                    </p>
+                                </li>
+
+                                <li class="listStyle">
+                                    <label for="phone">
+                                        <span class="block"
+                                            >Phone Number</span
+                                        ></label
+                                    >
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        .
+                                        class="input"
+                                    />
+                                </li>
+
+                                <li class="listStyle">
+                                    <label for="password">
+                                        <span class="block"
+                                            >password</span
+                                        ></label
+                                    >
+                                    <input
+                                        type="password"
+                                        id="password"
+                                        name="password"
+                                        class="input"
+                                        required
+                                    />
+                                </li>
+                                <li class="listStyle relative">
+                                    <label for="confirmPassword">
+                                        <span class="block"
+                                            >Confirm password</span
+                                        ></label
+                                    >
+                                    <input
+                                        type="password"
+                                        id="confirmPassword"
+                                        name="password"
+                                        class="input"
+                                        required
+                                    />
+                                    <p
+                                        class="passwordMatch invisible normal-case absolute top-16 lg:top-20 pt-2 mb-2 peer-invalid:visible text-pink-600 text-xs"
+                                    >
+                                        *Passwords do not match.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="p-8 flex flex-col items-center lg:items-start"
+                        >
+                            <button
+                                id="submit"
+                                class="py-3 px-8 bg-[#596D48] hover:bg-[#36422be1] mt-3 mb-5 rounded-lg text-gray-100 shadow-md font-medium"
+                            >
+                                Create Account
+                            </button>
+                            <h3>
+                                Already have an account?
+                                <a
+                                    href="#"
+                                    class="text-[#596D48] hover:text-[#36422be1] font-medium"
+                                    >Log in</a
+                                >
+                            </h3>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

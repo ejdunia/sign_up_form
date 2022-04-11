@@ -1,0 +1,13 @@
+@tailwind base;
+
+.input {
+    @apply border-2 border-gray-200 rounded-md p-2  w-full mb-5 text-2xl justify-center focus:outline-none focus:ring focus:ring-[#799462] invalid:border-pink-500 invalid:text-pink-600
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500;
+}
+
+.listStyle {
+    @apply w-64 md:w-80;
+}
+
+@tailwind components;
+@tailwind utilities;
